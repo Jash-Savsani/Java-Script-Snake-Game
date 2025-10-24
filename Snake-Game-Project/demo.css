@@ -1,0 +1,423 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  background: #fff;
+  color: #222;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+#carimg {
+  margin-right: 8px;
+  font-size: 26px;
+  color: #1976d2;
+}
+
+.menu ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.menu ul li a:hover {
+  background: #f0f0f0;
+  color: #1976d2;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn button {
+  padding: 7px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #1976d2;
+  border-radius: 4px;
+  background: #fff;
+  color: #1976d2;
+  cursor: pointer;
+}
+
+.btn .submit {
+  background: #1976d2;
+  color: #fff;
+  border: 1px solid #1976d2;
+}
+
+.btn .login:hover,
+.btn .submit:hover {
+  background: #e3f0fd;
+  color: #1976d2;
+}
+
+.profile-header {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 24px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-cover {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #1976d2;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #fff;
+  color: #1976d2;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 16px;
+}
+
+.profile-info h1 {
+  color: #1976d2;
+  font-size: 1.5rem;
+  margin: 0 0 4px 0;
+}
+
+.driver-tag {
+  color: #388e3c;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.stars i {
+  color: #ffd600;
+  font-size: 16px;
+}
+
+.rating-text {
+  color: #444;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.stat-label {
+  color: #888;
+  font-size: 13px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 24px 10px;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.section h2 {
+  color: #1976d2;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.info-grid, .vehicle-details, .amenities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info-item, .spec-item {
+  flex: 1 1 180px;
+  margin-bottom: 6px;
+}
+
+.info-item label, .spec-item label {
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.info-item span, .spec-item span {
+  color: #222;
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.edit-btn, .settings-btn {
+  padding: 7px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #1976d2;
+  background: #fff;
+  color: #1976d2;
+  cursor: pointer;
+}
+
+.edit-btn:hover, .settings-btn:hover {
+  background: #e3f0fd;
+  color: #1976d2;
+}
+
+.vehicle-image img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.amenities-list h3 {
+  color: #1976d2;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.amenity-tag {
+  background: #f5f5f5;
+  color: #1976d2;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.recent-activity, .reviews {
+  margin-top: 18px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity-item {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.activity-icon i {
+  color: #1976d2;
+  font-size: 18px;
+}
+
+.activity-content h4 {
+  color: #1976d2;
+  font-size: 1rem;
+  margin: 0 0 2px 0;
+}
+
+.activity-content p {
+  color: #444;
+  font-size: 13px;
+  margin: 0;
+}
+
+.activity-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.activity-earnings .amount, .rating-badge, .status-badge {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.reviews-summary {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.overall-rating {
+  text-align: center;
+}
+
+.rating-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  color: #1976d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto 4px auto;
+}
+
+.rating-label {
+  color: #888;
+  font-size: 12px;
+}
+
+.rating-breakdown {
+  flex: 1;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.bar-container {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #1976d2;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-item {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 10px 8px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.reviewer-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+}
+
+.review-header h4 {
+  color: #1976d2;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.stars i {
+  color: #ffd600;
+  font-size: 14px;
+}
+
+.review-date {
+  color: #888;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.review-text {
+  color: #444;
+  font-size: 13px;
+  margin: 0 0 4px 0;
+}
+
+.review-tags .tag {
+  background: #e0e0e0;
+  color: #1976d2;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+@media (max-width: 900px) {
+  .profile-header, .profile-container {
+    padding: 10px 2px;
+  }
+  .profile-cover, .info-grid, .vehicle-details, .amenities-grid {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
